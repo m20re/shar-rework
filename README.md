@@ -9,4 +9,4 @@ An attempt to create a variant of a YouTuber's website from [this](https://www.y
 
 #### Packages
 
--- To be updated ---
+- React-Wavify
