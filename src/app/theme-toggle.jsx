@@ -7,14 +7,16 @@ export default function ThemeToggle({ buttonFormat }) {
   const { theme, setTheme } = useTheme();
 
   const handleClick = () => {
-    console.log("Current theme:", theme);
     const newTheme = theme === "light" ? "dark" : "light";
-    console.log("Setting theme to:", newTheme);
     setTheme(newTheme);
   };
 
   return (
-    <button className={buttonFormat} onClick={handleClick}>
+    <button
+      className={buttonFormat}
+      aria-label="Toggle theme"
+      onClick={handleClick}
+    >
       <FontAwesomeIcon icon={faSun} style={{ color: "#808080" }} />
     </button>
   );
